@@ -24,3 +24,16 @@ VALUES ("Starting an Etsy Business", "Books", 19.95, 10),
     ("Viola Mute", "Musical Instruments", 1.50, 22);
 
 SELECT * FROM Bamazon.products;
+
+CREATE TABLE departments (
+  id INTEGER(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(20) NOT NULL,
+  overhead FLOAT(11, 2),
+  PRIMARY KEY (id)
+);
+
+INSERT INTO departments (name, overhead)
+VALUES ("Books", 1000),
+      ("Kitchenware", 5000),
+      ("Board Games", 52),
+      ("Musical Instruments", 29);
