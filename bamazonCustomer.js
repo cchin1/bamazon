@@ -37,6 +37,9 @@ var promptCustomer = function(res){
         message: "What would you like to purchase? [Quit with Q]"
     }]).then(function(answer){
         var correct = false;
+        if(answer.choice.toUpperCase()=="Q"){
+            process.exit();
+        }
         for(var i=0; i<res.length; i++){
             if(res[i].product_name==answer.choice){
                 correct=true;
@@ -54,8 +57,8 @@ var promptCustomer = function(res){
                         }
                     }
                 }).then(function(answer){
-                    if((res[id].stock_quantity-answer.quant)>0){
-                        connection.query("UPDATE products SET stockquantity=' "+(res[id].stock_quantity-answer.quant)+
+                    if((res[id].stock_quantity - answer.quant)>0){
+                        connection.query("UPDATE products SET stock_quantity=' "+(res[id].stock_quantity-answer.quant)+
                         " ' WHERE product_name=' "+product+ " ' ", function(err,res2){
                             console.log("Product Bought!");
                             makeTable();
@@ -66,6 +69,10 @@ var promptCustomer = function(res){
                     }
                 })
             }
+        }
+        if(i==res.length && correct==false){
+            console.log("Not a valid selection!");
+            promptCustomer(res);
         }
     })
 }
