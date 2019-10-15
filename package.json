@@ -1,0 +1,19 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "For UW Coding Bootcamp 12-Week 02-Homework Lead Developer:  Candice Chin https://candicechin.com",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchin1/bamazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchin1/bamazon/issues"
+  },
+  "homepage": "https://github.com/cchin1/bamazon#readme"
+}
