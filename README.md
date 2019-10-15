@@ -4,7 +4,7 @@ Lead Developer:  Candice Chin
 https://candicechin.com
 
 ## Technologies Used
-JavaScript, node.JS, Inquirer, MySQL
+JavaScript, node.JS, Inquirer, MySQL, Git, GitHub
 
 ## Overview of App 
 This app provides an Amazon-like storefront with the MySQL skills learned this unit. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, the app tracks product sales across the store's departments and then provides a summary of the highest-grossing departments in the store.
@@ -26,6 +26,12 @@ Populate this database with around 10 different products. (i.e. Insert "mock" da
 
 Once the customer has placed the order, your application should check if your store has enough of the product to meet the customer's request. If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through. However, if your store does have enough of the product, you should fulfill the customer's order. This means updating the SQL database to reflect the remaining quantity.
 Once the update goes through, show the customer the total cost of their purchase.
+
+## Sction #1: Screen Shots and Demo
+Markup : ![picture alt](/images/bamazon1.jpg "Shows the options")
+Markup : ![picture alt](/images/bamazon2.jpg "Rejects bad choice")
+Markup : ![picture alt](/images/bamazon3.jpg "Processes valid selection")
+Markup : ![picture alt](/images/bamazon4.jpg "Executes Quit Function")
 
 ## Section 2: Manager View (Next Level)
 Create a new Node application called bamazonManager.js. Running this application will:
